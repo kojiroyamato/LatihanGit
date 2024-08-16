@@ -5,42 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan CSS</title>
 
-    <!-- Internal CSS -->
     <style>
-        /* Warna latar belakang body */
-        body {
+         body {
             background-color: #f0f0f0;
         }
-
-        /* Heading dengan Inline CSS */
         h1 {
             color: blue;
             font-size: 36px;
         }
-
-        /* Selektor Elemen: Ubah warna teks dari semua elemen <p> menjadi merah */
-        p {
+         p {
             color: red;
             font-size: 18px;
         }
 
-        /* Selektor Kelas: Ubah latar belakang dari div dengan kelas "container" menjadi kuning */
         .container {
             background-color: yellow;
         }
 
-        /* Selektor ID: Ubah warna teks dari paragraf dengan ID "highlight" menjadi oranye dan ukuran font menjadi 20px */
+        
         #highlight {
             color: orange;
             font-size: 20px;
         }
 
-        /* Selektor Atribut: Ubah warna teks dari tautan <a> menjadi biru saat di-hover */
         a:hover {
             color: blue;
         }
 
-        /* Box Model untuk div dengan ID "boxModel" */
         #boxModel {
             width: 300px;
             height: 150px;
@@ -49,36 +40,32 @@
             margin: 15px;
         }
 
-        /* Flex Container */
         .flex-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        /* Item dalam Flex Container */
         .flex-container .item {
             padding: 10px;
             border: 2px solid gray;
         }
 
-        /* Font Styles untuk h2 */
         h2 {
             font-family: Arial, sans-serif;
             font-size: 30px;
             font-weight: bold;
         }
 
-        /* Background untuk paragraf dengan gambar */
+       
         p:nth-of-type(2) {
-            background-image: url('path/to/your/image.jpg'); /* Ganti 'path/to/your/image.jpg' dengan path gambar yang benar */
+            background-image: url('path/to/your/image.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;
             padding: 20px;
-            color: white; /* Mengubah warna teks agar kontras dengan gambar */
+            color: white; 
         }
 
-        /* Styling Kotak dengan kelas "advanced-style" */
         .advanced-style {
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -87,20 +74,16 @@
             color: white;
         }
 
-        /* Media Query untuk layar dengan lebar kurang dari 600px */
         @media (max-width: 600px) {
-            /* Flex Container menjadi kolom */
-            .flex-container {
+              .flex-container {
                 flex-direction: column;
             }
 
-            /* Ubah ukuran font h2 */
-            h2 {
+             h2 {
                 font-size: 24px;
             }
 
-            /* Ubah warna latar belakang halaman */
-            body {
+             body {
                 background-color: #e0f7fa;
             }
         }
@@ -108,44 +91,34 @@
 </head>
 <body>
 
-    <!-- Heading dengan Inline CSS -->
     <h1>Latihan CSS</h1>
 
-    <!-- Paragraf dengan Internal CSS -->
-    <p>Ini adalah contoh penggunaan CSS.</p>
+     <p>Ini adalah contoh penggunaan CSS.</p>
 
-    <!-- Div dengan kelas "container" -->
     <div class="container">
         <p>Paragraf 1 dalam div container.</p>
         <p>Paragraf 2 dalam div container.</p>
         <p>Paragraf 3 dalam div container.</p>
     </div>
 
-    <!-- Paragraf dengan ID "highlight" -->
-    <p id="highlight">Ini adalah paragraf yang di-highlight.</p>
+   <p id="highlight">Ini adalah paragraf yang di-highlight.</p>
 
-    <!-- Tautan -->
     <a href="#">Klik di sini</a>
 
-    <!-- Div dengan ID "boxModel" -->
-    <div id="boxModel">
+     <div id="boxModel">
         Ini adalah contoh Box Model
     </div>
 
-    <!-- Div dengan kelas "flex-container" -->
-    <div class="flex-container">
+     <div class="flex-container">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
     </div>
 
-    <!-- Heading dengan teks "Styling Lanjutan" -->
     <h2>Styling Lanjutan</h2>
 
-    <!-- Paragraf dengan teks dan background -->
-    <p>Ini adalah contoh penggunaan font dan background.</p>
+     <p>Ini adalah contoh penggunaan font dan background.</p>
 
-    <!-- Div dengan kelas "advanced-style" -->
     <div class="advanced-style">
         Ini adalah kotak dengan gaya yang menarik.
     </div>
